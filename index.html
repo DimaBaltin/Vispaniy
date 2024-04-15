@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly is not my friend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <!--time now-->
+    <script type="text/javascript">
+        function getDate()
+        {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            //По надобности условие ниже повторить с minutes и hours
+            if(seconds < 10)
+            {
+                seconds = '0' + seconds;
+            }
+            document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+        }
+        setInterval(getDate, 0);
+    </script>
+
+    <script type="text/javascript">
+        function getDate()
+        {
+          var res = document.getElementById("place");
+
+          // объявляем наши даты
+          var current = new Date(); // сегодня
+          var old = new Date("2024-01-01"); // !!! год-месяц-день !!!
+
+            // сначала находим количество дней между датами
+          var days = Math.ceil(Math.abs(old.getTime() - current.getTime()) / (1000 * 3600 * 24));
+           var year = Math.floor(days / 365); // вычисляем кол-во лет. Math.floor убирает остаток.
+           var months = Math.floor((days - (year * 365)) / 30); // отняв года, вычисляем месяцы
+
+           var abuse = days - 84;
+           var res2 = document.getElementById("place2");
+
+           var seen = days + 66;
+           var res3 = document.getElementById("place3");
+
+           // осталось вывести полученную информацию в контейнер:
+             res.innerHTML = ' ' + days + ' days';
+             res2.innerHTML = ' ' + abuse + ' days';
+             res3.innerHTML = ' ' + seen + ' days';
+        }
+        setInterval(getDate, 0);
+    </script>
+
+
+<!--Tip-->
+<div>
+    <h1 class="main-content-title" >Vitaly is not my friend</h1>
+    <h1 class="Time-now" >Time now: <span id="timedisplay"></span></h1>
+    
+        <div id="timedisplay"></div>
+
+    <h4 class="Un-friend">I'm not friends with Vitaly:<span id="place"></span></h4>
+    <h4 class="Abuse">I'm offended by Vitaly:<span id="place2"></span></h4>
+    <h4 class="seen">The last time I saw Vitaly:<span id="place3"></span></h4>  
+         
+     
+    <p style="text-align: center;"><img src="img/photo.jpg" alt="my photo" height="430" width="330" ></p>
+        
+
+</div>
+
+
+
+</body>
+</html>

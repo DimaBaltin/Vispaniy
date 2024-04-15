@@ -1,0 +1,51 @@
+body {
+    font-family:'montserrat', sans-serif;
+    background-color: hsl(216, 100%, 31%);
+}
+.main-content-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40x;
+    line-height: 27px;
+    text-align: center;
+    color: hwb(0 3% 7%);
+    margin-bottom: 10px; 
+}
+
+.Time-now{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33x;
+    line-height: 27px;
+    text-align: center;
+    color: hwb(61 3% 7%);
+    margin-bottom: 10px; 
+}
+
+.Un-friend{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40x;
+    line-height: 20px;
+    text-align: center;
+    color: hwb(132 3% 7%);
+    margin-bottom: 10px; 
+}
+.Abuse{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40x;
+    line-height: 20px;
+    text-align: center;
+    color: hwb(315 3% 7%);
+    margin-bottom: 10px; 
+}
+.seen{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40x;
+    line-height: 20px;
+    text-align: center;
+    color: hwb(180 3% 7%);
+    margin-bottom: 10px; 
+}
