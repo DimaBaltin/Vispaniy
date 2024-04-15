@@ -24,7 +24,14 @@
             {
                 seconds = '0' + seconds;
             }
+            if(minutes < 10)
+            {
+                minutes = '0' + minutes;
+            }
+
+
             document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+            
         }
         setInterval(getDate, 0);
     </script>
