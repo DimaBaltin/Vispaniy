@@ -49,3 +49,12 @@ body {
     color: hwb(180 3% 7%);
     margin-bottom: 10px; 
 }
+.seen2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40x;
+    line-height: 20px;
+    text-align: center;
+    color: hwb(180 3% 7%);
+    margin-bottom: 10px; 
+}
